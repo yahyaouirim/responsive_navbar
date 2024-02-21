@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive NavBar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=HideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul> 
+        <ul>
+            <li><a href="#">Logo</a></li>
+            <li class="hideMobile"><a href="#">Home</a></li>
+            <li class="hideMobile"><a href="#">Blog</a></li>
+            <li class="hideMobile"><a href="#">Forum</a></li>
+            <li class="hideMobile"><a href="#">Categories</a></li>
+            <li class="hideMobile"><a href="#">Contact</a></li>
+            <li class="hideMobile"><a href="#">Login</a></li>
+            <li class="menu-bar" onclick=ShowSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <main class="glass-container">
+        <h1>Categories</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, maiores ducimus numquam facere praesentium velit explicabo nobis sunt facilis quaerat rem. Quas sunt optio nemo? Rerum facere necessitatibus officiis repudiandae, rem molestias alias praesentium reprehenderit, molestiae minima quidem reiciendis illum amet eligendi facilis incidunt enim. Perspiciatis aspernatur ullam eveniet voluptatem.</p>
+    </main>
+    
+    <script>
+        function ShowSideBar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'flex';
+
+        }
+        function HideSideBar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
